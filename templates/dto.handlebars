@@ -1,0 +1,22 @@
+{{#each entities}}
+/**
+ * {{label}}
+ */
+export interface {{name}} {
+    {{#each properties}}
+    {{name}}: {{type}}; // {{label}}
+    {{/each}}
+    {{#each navigations}}
+
+    // {{label}}
+    {{name}}: {
+    {{#if multiple}}
+        results: {{type}};
+    {{^}}
+        d: {{type}};
+    {{/if}}
+    }
+    {{/each}}
+}
+
+{{/each}}
