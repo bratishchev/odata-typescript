@@ -6,7 +6,7 @@
     "start": "ts-node ./src/main.ts"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "handlebars": "^4.7.6",
     "xml2js": "^0.4.23"
   },
